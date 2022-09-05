@@ -13,7 +13,7 @@ public class PostsViewController {
 
     @RequestMapping(path = "/", method = RequestMethod.GET)
     public String list(Model model) {
-        model.addAttribute("appName", "Сентябрь горит");
+        model.addAttribute("appName", "Мои посты");
         model.addAttribute("posts", postsService.listAllPosts());
         return "list";
     }
